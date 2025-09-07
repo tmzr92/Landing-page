@@ -1,3 +1,4 @@
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,32 +10,63 @@
 </head>
 
 <body>
-
-    <div class="hero-section">
-        <div class="navbar">
-            <div class="logo">Header Logo</div>
-            <ul>
-                <li>header link one</li>
-                <li>header link two</li>
-                <li>header link three</li>
-            </ul>
+    <header class="site-header">
+        <div class="container navbar">
+            <a class="logo" href="#">
+                <img src="https://ui-avatars.com/api/?name=My+Logo&size=160&background=1f2933&color=ffffff" alt="Logo">
+            </a>
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <!-- Hero content -->
-        <div class="hero-content">
+    <section class="hero-section">
+        <div class="container hero-content">
             <div class="hero-text">
                 <h1>This website is awesome</h1>
-                <p>
+                <p class="lead">
                     This website has some subtext that goes here under the main title.
-                    It's a smaller font and the color is lower contrast
+                    It's a smaller font and the color is lower contrast.
                 </p>
-                <button>Sign up</button>
+                <div class="cta-row">
+                    <a class="btn primary" href="#signup">Sign up</a>
+                    <a class="btn ghost" href="#learn">Learn more</a>
+                </div>
             </div>
+
             <div class="hero-image">
-                this is a placeholder for an image
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Hero illustration">
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="features" class="second-section">
+        <div class="container">
+            <h2 class="section-title">Some random information.</h2>
+
+           <div class="features">
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=400&q=80" alt="Feature 1 - coding">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=400&q=80" alt="Feature 2 - workspace">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1586421483226-7f5e25967f82?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?auto=format&fit=crop&w=400&q=80" alt="Feature 3 - illustration">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div class="feature">
+                    <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?auto=format&fit=crop&w=400&q=80" alt="Feature 4 - product">
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
